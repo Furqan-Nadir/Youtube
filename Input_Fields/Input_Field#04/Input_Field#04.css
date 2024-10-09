@@ -1,0 +1,31 @@
+body{
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+} 
+
+.expand-width-input {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+    background: transparent;
+  color: #ccc;
+    transition: width 0.4s ease;
+}
+
+.expand-width-input:focus {
+    width: 300px;
+    outline: none;
+}
+body{
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+} 
