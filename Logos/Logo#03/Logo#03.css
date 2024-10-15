@@ -1,0 +1,32 @@
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+  overflow: hidden; 
+}
+
+.logo-container {
+    cursor: pointer; 
+}
+
+#path1, #path2 {
+    transition: transform 0.5s ease; 
+}
+
+.logo-container:hover #path1 {
+    transform: translate(-45px, -10px);
+}
+
+.logo-container:hover #path2 {
+    transform: translate(45px, 10px);
+}
+#revealText{
+   font-family: system-ui;
+}
+.logo-container:hover #revealText {
+    opacity: 1; 
+    transition: opacity 2s ease;
+}
