@@ -1,0 +1,64 @@
+body {
+    background-color: black;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Fade in from top */
+path.fadeInTop {
+    opacity: 0;
+    transform: translateY(-80px);
+    animation: fadeInTop 3s ease forwards;
+}
+
+@keyframes fadeInTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Fade in from bottom */
+path.fadeInBottom {
+    opacity: 0;
+    transform: translateY(80px);
+    /* Start from below */
+    animation: fadeInBottom 3s ease forwards;
+}
+
+@keyframes fadeInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(80px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Simple fade-in */
+path.fadeIn {
+    opacity: 0;
+    animation: fadeInSimple 3s ease forwards;
+}
+
+@keyframes fadeInSimple {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
