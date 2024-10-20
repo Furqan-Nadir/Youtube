@@ -1,0 +1,33 @@
+body {
+    background-color: black;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ink-btn {
+    background-color: #1abc9c;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.ink-btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 200%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: skewX(-20deg);
+    transition: all 0.5s ease;
+}
+.ink-btn:hover::after {
+    left: 100%;
+}
