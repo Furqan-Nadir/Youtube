@@ -1,0 +1,30 @@
+body {
+    background-color: black;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.neon-btn {
+    background-color: black;
+    color: #00ff99;
+    border: 2px solid #00ff99;
+    padding: 12px 24px;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 8px;
+    position: relative;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    box-shadow: 0 0 10px #00ff99, 0 0 20px #00ff99, 0 0 40px #00ff99;
+}
+
+.neon-btn:hover {
+    box-shadow: 0 0 20px #00ff99, 0 0 30px #00ff99, 0 0 60px #00ff99;
+    color: #000;
+    background-color: #00ff99;
+}
