@@ -1,0 +1,43 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #1b1b1b;
+  overflow: hidden;
+}
+
+button {
+  padding: 15px 30px;
+  font-size: 20px;
+  color: white;
+  border: 2px solid #00ffab;
+  border-radius: 50px;
+  background: transparent;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  text-shadow: 0px 0px 8px #00ffab;
+  box-shadow: 0px 0px 15px #00ffab, 0px 0px 30px #00ffab; /* Neon effect */
+  transition: 1s ease;
+}
+
+button:hover {
+  box-shadow: 0px 0px 30px #00ffab, 0px 0px 60px #00ffab; /* Stronger neon glow on hover */
+}
+
+.ripple {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(0, 255, 171, 0.4);
+  box-shadow: 0px 0px 20px rgba(0, 255, 171, 0.8); /* Glowing ripple */
+  transform: scale(0);
+  animation: rippleEffect 0.8s ease-out;
+}
+
+@keyframes rippleEffect {
+  to {
+    transform: scale(6);
+    opacity: 0;
+  }
+}
